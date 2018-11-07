@@ -14,7 +14,7 @@ for page in range(0,1):
         name = person.select_one("h4 > a").text.strip()
         lower = person.select_one("div#sched-page-attendees-data").text.strip().split('<br>')
         print(name,lower)
-        with open('test.csv','a') as csv_file:
+        with open('page7.csv','a') as csv_file:
             write = csv.writer(csv_file)
             write.writerow([name, lower])
 
